@@ -1,0 +1,53 @@
+// color palette
+$color-Edward: #B0B8B3;
+$color-Elm: #1C6970;
+$color-WillowGrove: #646A61;
+$color-Siam: #545C4E;
+$color-fr: #292e25;
+
+
+#placeholder {
+    text-align: center;
+    width: 75%;
+    margin: 35px auto;
+
+    h1, h2, h3 {
+        padding-top: 10px;
+        line-height: 120%;
+        font-family: "Mullish", sans-serif;
+    }
+
+    h1 {
+        color: $color-Elm;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        color: $color-fr;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: red;
+    }
+
+    img {
+        width: 50%;
+        border-radius: 5px;
+        margin: 15px 5px;
+    }
+
+    span {
+        color: $color-Siam;
+        word-break: keep-all;
+        word-wrap: normal;
+        white-space: nowrap;
+    }
+
+    @media screen and (max-width: 600px) {
+        img {
+            width: 100%;
+            
+        }
+    }
+}

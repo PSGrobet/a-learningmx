@@ -1,0 +1,208 @@
+@import 'placeholder';
+
+
+// color palette
+$color-Edward: #B0B8B3;
+$color-Elm: #1C6970;
+$color-WillowGrove: #646A61;
+$color-Siam: #545C4E;
+$color-fr: #292e25;
+$color-fr-heading: #d5e2da;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-Edward;
+    font-family: sans-serif;
+    font-family: "Source Sans Pro"
+}
+
+ol, ul {
+    list-style-position: inside;
+}
+
+header {
+    background-color: $color-Elm;
+    color: #d5e2da;
+
+    #titulo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 30px;
+
+        @media screen and (max-width: 600px) {
+            padding: 10px 0 10px 10px;
+
+        }
+
+        #heading-icon {
+            width: 48px;
+
+            @media screen and (max-width: 600px) {
+                width: 32px;
+            }
+        }
+    }
+
+    h1 {
+        
+        padding: 20px 30px;
+        font-size: 3em;
+        font-family: 'Mullish', sans-serif;
+        letter-spacing: 4px;
+        display: inline-block;
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.5em;
+            padding: 10px 10px;
+        }
+        
+    }
+
+    nav {
+        background-color: $color-Siam;
+        letter-spacing: 2px;
+        margin: 0;
+        width: 100%;
+        font-variant: small-caps;
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            line-height: 2em;
+
+            li {
+                flex-grow: 1;
+                text-align: center; 
+                margin: 0;
+            }
+
+            li:hover {
+                background-color: $color-WillowGrove;
+            }
+
+            a {
+                text-decoration: none;
+                color: #d5e2da;
+            }
+        }
+    }
+}
+
+span.title {
+    white-space: nowrap;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    color: $color-fr;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+    #portada {
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+        }
+        
+    }
+    #portada + p {
+        text-align: center;
+        margin: 20px;
+
+    }
+
+    h2 {
+        font-family: 'Mullish', sans-serif;
+        padding: 10px;
+    }
+}
+
+#nlc-map {
+    margin-top: 20px;
+
+    .nlc-map-items {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: auto;
+        flex-grow: 1;  
+        align-items: stretch;
+        
+
+        @media screen and (max-width: 960px) {
+            flex-direction: column;
+        }
+
+        &>div {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            img {
+            display: block;
+            margin: 20px auto 0 auto;
+            align-self: flex-end;
+            margin-bottom: 20px;
+            flex-grow: 0;
+            
+        }
+
+            @media screen and (max-width: 960px) {
+                width: 100%;
+            }
+        }
+
+        
+    }
+    .nlc-item {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+        flex-grow: 1;
+
+        @media screen and (max-width: 600px) {
+            height: auto;
+        }
+        
+    }
+
+    .nlc-map-items + h2 {
+        text-align: center;
+        width: 75%;
+
+        padding: 10px;
+        margin: 30px auto;
+        border-radius: 15px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        background-color: #e0a028;
+        color: $color-fr-heading;
+
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
