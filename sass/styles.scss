@@ -9,6 +9,14 @@ $color-Siam: #545C4E;
 $color-fr: #292e25;
 $color-fr-heading: #d5e2da;
 
+$verde-1: #245a57;
+$azul-claro: #53bdc5;
+$verde-2: #398d88;
+$verde-3: #53a7a2;
+$rosa-1: #8d2a75;
+$rosa-2: #a73a8d;
+$cafe: #5a502d;
+
 
 
 * {
@@ -18,7 +26,7 @@ $color-fr-heading: #d5e2da;
 }
 
 body {
-    background-color: $color-Edward;
+    background-color: white;
     font-family: sans-serif;
     font-family: "Source Sans Pro"
 }
@@ -28,7 +36,7 @@ ol, ul {
 }
 
 header {
-    background-color: $color-Elm;
+    background-color: $verde-1;
     color: #d5e2da;
 
     #titulo {
@@ -66,39 +74,95 @@ header {
         
     }
 
-    nav {
-        background-color: $color-Siam;
-        letter-spacing: 2px;
-        margin: 0;
-        width: 100%;
-        font-variant: small-caps;
+    // nav {
+    //     background-color: $color-Siam;
+    //     letter-spacing: 2px;
+    //     margin: 0;
+    //     width: 100%;
+    //     font-variant: small-caps;
 
-        ul {
-            display: flex;
-            list-style: none;
-            justify-content: space-around;
-            line-height: 2em;
+    //     ul {
+    //         display: flex;
+    //         list-style: none;
+    //         justify-content: space-around;
+    //         line-height: 2em;
 
-            li {
-                flex-grow: 1;
-                text-align: center; 
-                margin: 0;
-            }
+    //         li {
+    //             flex-grow: 1;
+    //             text-align: center; 
+    //             margin: 0;
+    //         }
 
-            li:hover {
-                background-color: $color-WillowGrove;
-            }
+    //         li:hover {
+    //             background-color: $color-WillowGrove;
+    //         }
 
-            a {
-                text-decoration: none;
-                color: #d5e2da;
-            }
-        }
-    }
+    //         a {
+    //             text-decoration: none;
+    //             color: #d5e2da;
+    //         }
+    //     }
+    // }
 }
 
 span.title {
     white-space: nowrap;
+}
+
+.navbar-collapse {
+    padding-left:10px;
+    padding-bottom: 0;
+ }
+// .nav, .navbar-nav li a:hover {background-color: rgba(255,255,255, 0.2);}
+
+.navbar-inverse, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+}
+
+.container-fluid {
+    background-color: $cafe;
+ 
+}
+
+
+// .navbar-inverse .navbar-nav>.active>a,
+// .navbar-default .navbar-nav>.active>a:focus,
+// .navbar-default .navbar-nav>.active>a:hover {
+//     color: #292e25;
+//     background-color: $cafe;
+//     }
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus{
+    color: $color-fr;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.nav li {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid  rgba(255,255,255, 0.2)
+}
+.nav li:hover {
+    background-color: rgba(255,255,255, 0.2) !important;
+}
+
+.navbar-inverse .navbar-nav>a:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content-stickyNav{
+    padding-top: 68px;
+}
+
+nav {
+    color: #d5e2da;
 }
 
 main {
@@ -112,9 +176,10 @@ main {
     }
 
     #portada {
-        width: 80%;
+        width: 100%;
         display: block;
-        margin: 20px auto;
+        
+        margin: 0 auto;
         border-radius: 5px;
         box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
@@ -135,6 +200,10 @@ main {
     h2 {
         font-family: 'Mullish', sans-serif;
         padding: 10px;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 }
 
@@ -174,13 +243,13 @@ main {
             }
         }
 
-        
     }
     .nlc-item {
         width: 100%;
         padding: 10px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+        background-color: $verde-2;
+        box-shadow: 0 0 15px rgba(0,0,0,1);  
         flex-grow: 1;
 
         @media screen and (max-width: 600px) {
@@ -197,12 +266,12 @@ main {
         margin: 30px auto;
         border-radius: 15px;
         letter-spacing: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        background-color: #e0a028;
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        background-color: $rosa-1;
         color: $color-fr-heading;
 
         @media screen and (max-width: 480px) {
-            width: 100%;
+            width: 90%;    
         }
     }
 }

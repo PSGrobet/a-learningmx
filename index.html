@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a-LearningMX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -19,22 +22,35 @@
     <header>
         <div id="titulo">
             <img src="images/brain-speech-bubble (1).png" id="heading-icon">
-            <h1></span><span class="title">a-LEARNING</span></h1>
+            <h1></span><span class="title">a-LEARNINGMX</span></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Mi Historia</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Recursos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-inverse" id="navbar-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">a-LEARNINGMX</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Inicio</a></li>
+                    <li><a href="#">Mi Historia</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
+    <main id="content">
         <img id="portada" src="images/portada.jpg">
-        <p>Marcela Grobet Vallarta es la primera Neurolanguage Coach &#174; Advanced de México, certificada por Efficient Language Learning&#174;. </p>
+        <p>Te doy la bienvenida, soy Marcela Grobet Vallarta, primera Neurolanguage Coach &#174; Advanced de México, certificada por <a href="https://neurolanguagecoachnetwork.com/user/marcela-grobet-vallarta" target="_blank">Efficient Language Learning</a>&#174;. </p>
 
         <h2>Una forma diferente de aprender un idioma.</h2>
         <div id="nlc-map">
@@ -44,7 +60,7 @@
                         <h2 class="nlc-header">Neuro</h2>
                         <ul>
                             <li>Se crea un puente entre las neurociencias, la inteligencia emocional y la forma de aprender.</li>
-                            <li>Estructura de aprendizaje completamente diferente a los meétodos tradicionales.</li>
+                            <li>Estructura de aprendizaje completamente diferente a los métodos tradicionales.</li>
                             <li>Conocimiento y aplicación de estrategias para un aprendizaje óptimo.</li>
                         </ul>
                     </div>
@@ -66,7 +82,7 @@
                         <h2 class="nlc-header">Coaching</h2>
                         <ul>
                             <li>El coach es solamente un guía, una acompañante para el coachee, y sigue los estándares de la <a href="https://coachfederation.org/">ICF</a>.</li>
-                            <li>Juntos coach y coachee, establecerán las metas, acciones, motivación y compromiso.</li>
+                            <li>Juntos coach y coachee establecerán las metas, acciones, motivación y compromiso.</li>
                             <li>Escucha activa, comunicación amistosa y retroalimentación positiva en todo momento.</li>
                             <li>El/la coach cuenta con la habilidad para detectar situaciones que bloquean el proceso de aprendizaje.</li>
                         </ul>
@@ -80,5 +96,8 @@
     <!-- <footer>
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer> -->
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
