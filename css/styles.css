@@ -33,17 +33,29 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: white;
   font-family: sans-serif;
   font-family: "Source Sans Pro"; }
 
-ol, ul {
-  list-style-position: inside; }
+h2 {
+  color: #245a57;
+  font-family: 'Mulish', sans-serif; }
+
+table {
+  width: 75%;
+  margin: 10px auto; }
+  table tr {
+    border-bottom: 1px solid black; }
+  table td, table th {
+    padding: 5px; }
 
 header {
-  background-color: #245a57;
-  color: #d5e2da; }
+  background-color: white;
+  color: #398d88; }
   header #titulo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -66,7 +78,7 @@ header {
   header h1 {
     padding: 20px 30px;
     font-size: 3em;
-    font-family: 'Mullish', sans-serif;
+    font-family: 'Mulish', sans-serif;
     letter-spacing: 4px;
     display: inline-block; }
     @media screen and (max-width: 600px) {
@@ -85,13 +97,23 @@ span.title {
   border: none; }
 
 .container-fluid {
-  background-color: #5a502d; }
+  background-color: #398d88;
+  color: #292e25; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #53bdc5; }
+
+.navbar-inverse .navbar-brand {
+  color: #53bdc5;
+  letter-spacing: 2px; }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #292e25;
   background-color: inherit;
-  font-weight: bold; }
+  font-weight: bold;
+  border: 1px solid #292e25;
+  border-radius: 5px; }
 
 .nav li {
   -webkit-transition: all 0.2s ease;
@@ -113,7 +135,7 @@ span.title {
   padding-top: 68px; }
 
 nav {
-  color: #d5e2da; }
+  color: #292e25; }
 
 main {
   width: 80%;
@@ -122,7 +144,8 @@ main {
   color: #292e25; }
   @media screen and (max-width: 600px) {
     main {
-      width: 100%; } }
+      width: 100%;
+      padding: 10px; } }
   main #portada {
     width: 100%;
     display: block;
@@ -140,9 +163,14 @@ main {
     text-align: center;
     margin: 20px; }
   main h2 {
-    font-family: 'Mullish', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    color: #245a57;
+    letter-spacing: 2px;
     padding: 10px; }
   main p {
+    font-size: 1.2em; }
+  main ul, main ol {
+    padding-left: 10px;
     font-size: 1.2em; }
 
 #nlc-map {
@@ -196,12 +224,14 @@ main {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    background-color: #398d88;
+    background-color: #53bdc5;
     -webkit-box-shadow: 0 0 15px black;
             box-shadow: 0 0 15px black;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+    #nlc-map .nlc-item ul {
+      list-style-position: inside; }
     @media screen and (max-width: 600px) {
       #nlc-map .nlc-item {
         height: auto; } }
@@ -219,4 +249,45 @@ main {
     @media screen and (max-width: 480px) {
       #nlc-map .nlc-map-items + h2 {
         width: 90%; } }
+
+.sub-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.sub-nav li {
+  padding: 0 30px;
+  list-style: none;
+  border-left: 1px solid #53bdc5; }
+  @media screen and (max-width: 600px) {
+    .sub-nav li {
+      padding: 5px; } }
+  .sub-nav li:first-child {
+    border-left: none; }
+  .sub-nav li:hover {
+    border: 1px solid #53bdc5;
+    border-radius: 5px; }
+    .sub-nav li:hover + li {
+      border: none; }
+  .sub-nav li a {
+    color: #245a57;
+    text-decoration: none;
+    letter-spacing: 1px; }
+
+.fas, .far {
+  color: #53bdc5; }
+
+.list-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .list-p i {
+    padding: 5px; }
+
+.alert {
+  color: #8d2a75;
+  padding: 0; }
 /*# sourceMappingURL=styles.css.map */

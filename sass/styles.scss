@@ -25,19 +25,38 @@ $cafe: #5a502d;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     font-family: sans-serif;
     font-family: "Source Sans Pro"
 }
 
-ol, ul {
-    list-style-position: inside;
+h2 {
+    color: $verde-1;
+    font-family: 'Mulish', sans-serif;
 }
 
+table {
+    width: 75%;
+    margin: 10px auto;
+    
+
+    tr {
+        border-bottom: 1px solid black;
+    }
+    td, th {
+        padding: 5px;
+    }
+}
+
+
 header {
-    background-color: $verde-1;
-    color: #d5e2da;
+    background-color: white;
+    color: $verde-2;
 
     #titulo {
         display: flex;
@@ -63,7 +82,7 @@ header {
         
         padding: 20px 30px;
         font-size: 3em;
-        font-family: 'Mullish', sans-serif;
+        font-family: 'Mulish', sans-serif;
         letter-spacing: 4px;
         display: inline-block;
 
@@ -74,35 +93,6 @@ header {
         
     }
 
-    // nav {
-    //     background-color: $color-Siam;
-    //     letter-spacing: 2px;
-    //     margin: 0;
-    //     width: 100%;
-    //     font-variant: small-caps;
-
-    //     ul {
-    //         display: flex;
-    //         list-style: none;
-    //         justify-content: space-around;
-    //         line-height: 2em;
-
-    //         li {
-    //             flex-grow: 1;
-    //             text-align: center; 
-    //             margin: 0;
-    //         }
-
-    //         li:hover {
-    //             background-color: $color-WillowGrove;
-    //         }
-
-    //         a {
-    //             text-decoration: none;
-    //             color: #d5e2da;
-    //         }
-    //     }
-    // }
 }
 
 span.title {
@@ -120,23 +110,28 @@ span.title {
 }
 
 .container-fluid {
-    background-color: $cafe;
+    background-color: $verde-2;
+    color: $color-fr;
+    
  
 }
 
+.navbar-inverse .navbar-nav > li > a {
+    color: $azul-claro;
+}
 
-// .navbar-inverse .navbar-nav>.active>a,
-// .navbar-default .navbar-nav>.active>a:focus,
-// .navbar-default .navbar-nav>.active>a:hover {
-//     color: #292e25;
-//     background-color: $cafe;
-//     }
+.navbar-inverse .navbar-brand {
+    color: $azul-claro;
+    letter-spacing: 2px;
+}
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus{
     color: $color-fr;
     background-color: inherit;
     font-weight: bold;
+    border: 1px solid $color-fr;
+    border-radius: 5px;
 }
 
 .nav li {
@@ -162,7 +157,7 @@ span.title {
 }
 
 nav {
-    color: #d5e2da;
+    color: $color-fr;
 }
 
 main {
@@ -173,6 +168,7 @@ main {
 
     @media screen and (max-width: 600px) {
         width: 100%;
+        padding: 10px;
     }
 
     #portada {
@@ -198,11 +194,18 @@ main {
     }
 
     h2 {
-        font-family: 'Mullish', sans-serif;
+        font-family: 'Mulish', sans-serif;
+        color: $verde-1;
+        letter-spacing: 2px;
         padding: 10px;
     }
 
     p {
+        font-size: 1.2em;
+    }
+
+    ul, ol {
+        padding-left: 10px;
         font-size: 1.2em;
     }
 }
@@ -248,9 +251,13 @@ main {
         width: 100%;
         padding: 10px;
         border-radius: 10px;
-        background-color: $verde-2;
+        background-color: $azul-claro;
         box-shadow: 0 0 15px rgba(0,0,0,1);  
         flex-grow: 1;
+
+        ul {
+            list-style-position: inside;
+        }
 
         @media screen and (max-width: 600px) {
             height: auto;
@@ -274,4 +281,64 @@ main {
             width: 90%;    
         }
     }
+}
+
+
+// sub-nav
+
+.sub-nav {
+    
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    li {
+        padding: 0 30px;
+        list-style: none;
+        border-left: 1px solid $azul-claro;
+
+        @media screen and (max-width: 600px) {
+            padding: 5px;
+        }
+
+        &:first-child {
+            border-left: none;
+        }
+
+
+        &:hover {
+            border: 1px solid $azul-claro;
+            border-radius: 5px;
+
+            &+li {
+                border: none; 
+            }
+        }
+
+        a {
+            color: $verde-1;
+            text-decoration: none;
+            letter-spacing: 1px;
+
+        }
+    }
+}
+
+.fas, .far {
+    color: $azul-claro;
+}
+
+.list-p {
+    display: flex;
+
+    i {
+        padding: 5px;
+    }
+}
+
+.alert {
+    color: $rosa-1;
+    padding: 0;
 }
