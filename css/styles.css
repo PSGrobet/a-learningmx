@@ -37,7 +37,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: white;
+  background-color: #eee;
   font-family: sans-serif;
   font-family: "Source Sans Pro"; }
 
@@ -94,14 +94,18 @@ span.title {
   white-space: nowrap; }
 
 #navbar-top {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  z-index: 1000;
+  background-color: #398d88;
+  color: #292e25; }
 
 .navbar-collapse {
   padding-left: 10px;
   padding-bottom: 0; }
 
 .navbar-inverse, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  border: none; }
+  border: none;
+  height: auto; }
 
 .container-fluid {
   background-color: #398d88;
@@ -157,7 +161,7 @@ nav {
 
 main {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   color: #292e25;
   padding-top: 20px; }

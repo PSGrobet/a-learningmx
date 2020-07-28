@@ -30,9 +30,9 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #eee;
     font-family: sans-serif;
-    font-family: "Source Sans Pro"
+    font-family: "Source Sans Pro";
 }
 
 h2 {
@@ -103,6 +103,9 @@ span.title {
 
 #navbar-top {
     margin-bottom: 0;
+    z-index: 1000;
+    background-color: $verde-2;
+    color: $color-fr;
 }
 
 .navbar-collapse {
@@ -113,6 +116,7 @@ span.title {
 
 .navbar-inverse, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border: none;
+    height: auto;
 }
 
 .container-fluid {
@@ -186,7 +190,7 @@ nav {
 
 main {
     width: 80%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     color: $color-fr;
     padding-top: 20px;
