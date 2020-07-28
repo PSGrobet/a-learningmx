@@ -1,6 +1,6 @@
-.container {
-  margin: auto;
-  max-width: 100%; }
+html, body {
+  overflow-x: hidden;
+  padding: 0; }
 
 .timeline {
   position: relative; }
