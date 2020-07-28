@@ -59,21 +59,23 @@ header {
     color: $verde-2;
 
     #titulo {
+
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding-left: 30px;
-
+        box-sizing: border-box;
+        padding: 15px 30px;
+        height: 18vw;
         @media screen and (max-width: 600px) {
+            height: 35vw;
             padding: 10px 0 10px 10px;
-
         }
 
         #heading-icon {
-            width: 48px;
+            width: 50%;
 
             @media screen and (max-width: 600px) {
-                width: 32px;
+                width: 100%;
             }
         }
     }
@@ -97,6 +99,10 @@ header {
 
 span.title {
     white-space: nowrap;
+}
+
+#navbar-top {
+    margin-bottom: 0;
 }
 
 .navbar-collapse {
@@ -160,38 +166,37 @@ nav {
     color: $color-fr;
 }
 
+#portada {
+    width: 100%;
+    top: 0;
+    margin: 0 auto 20px auto;
+    //border-radius: 5px;
+    //box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+}
+
+
 main {
     width: 80%;
     max-width: 1200px;
     margin: auto;
     color: $color-fr;
+    padding-top: 20px;
 
     @media screen and (max-width: 600px) {
         width: 100%;
         padding: 10px;
     }
 
-    #portada {
-        width: 100%;
-        display: block;
-        
-        margin: 0 auto;
-        border-radius: 5px;
-        box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-
-        @media screen and (max-width: 600px) {
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            border-radius: 0;
-        }
-        
-    }
-    #portada + p {
-        text-align: center;
-        margin: 20px;
-
-    }
+    
 
     h2 {
         font-family: 'Mulish', sans-serif;
@@ -202,6 +207,7 @@ main {
 
     p {
         font-size: 1.2em;
+
     }
 
     ul, ol {
@@ -249,11 +255,16 @@ main {
     }
     .nlc-item {
         width: 100%;
-        padding: 10px;
+        padding: 0 10px;
         border-radius: 10px;
         background-color: $azul-claro;
         box-shadow: 0 0 15px rgba(0,0,0,1);  
         flex-grow: 1;
+
+        img {
+            width: 50%;
+            margin: 0 auto;
+        }
 
         ul {
             list-style-position: inside;
@@ -264,11 +275,28 @@ main {
         }
         
     }
+}
 
-    .nlc-map-items + h2 {
+#mas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    .fas {
+        font-size: 2em;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    button {
+        display: block;
         text-align: center;
-        width: 75%;
-
+        width: 100%;
+    
         padding: 10px;
         margin: 30px auto;
         border-radius: 15px;
@@ -277,11 +305,38 @@ main {
         background-color: $rosa-1;
         color: $color-fr-heading;
 
+        border: none;
+
+        
+        &:hover {
+            //background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255,255,255, 0.5);
+        }
+    
+        @media screen and (max-width: 480px) {
+            width: 70%;    
+        }
+
+    }
+
+    h2 {
+        text-align: center;
+        width: 75%;
+    
+        padding: 10px;
+        margin: 30px auto;
+        border-radius: 15px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        background-color: $rosa-1;
+        color: $color-fr-heading;
+    
         @media screen and (max-width: 480px) {
             width: 90%;    
         }
     }
 }
+
 
 
 // sub-nav

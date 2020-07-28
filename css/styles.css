@@ -66,15 +66,19 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 30px; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 30px;
+    height: 18vw; }
     @media screen and (max-width: 600px) {
       header #titulo {
+        height: 35vw;
         padding: 10px 0 10px 10px; } }
     header #titulo #heading-icon {
-      width: 48px; }
+      width: 50%; }
       @media screen and (max-width: 600px) {
         header #titulo #heading-icon {
-          width: 32px; } }
+          width: 100%; } }
   header h1 {
     padding: 20px 30px;
     font-size: 3em;
@@ -88,6 +92,9 @@ header {
 
 span.title {
   white-space: nowrap; }
+
+#navbar-top {
+  margin-bottom: 0; }
 
 .navbar-collapse {
   padding-left: 10px;
@@ -137,31 +144,27 @@ span.title {
 nav {
   color: #292e25; }
 
+#portada {
+  width: 100%;
+  top: 0;
+  margin: 0 auto 20px auto; }
+  @media screen and (max-width: 600px) {
+    #portada {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border-radius: 0; } }
+
 main {
   width: 80%;
   max-width: 1200px;
   margin: auto;
-  color: #292e25; }
+  color: #292e25;
+  padding-top: 20px; }
   @media screen and (max-width: 600px) {
     main {
       width: 100%;
       padding: 10px; } }
-  main #portada {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 600px) {
-      main #portada {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        border-radius: 0; } }
-  main #portada + p {
-    text-align: center;
-    margin: 20px; }
   main h2 {
     font-family: 'Mulish', sans-serif;
     color: #245a57;
@@ -222,7 +225,7 @@ main {
           width: 100%; } }
   #nlc-map .nlc-item {
     width: 100%;
-    padding: 10px;
+    padding: 0 10px;
     border-radius: 10px;
     background-color: #53bdc5;
     -webkit-box-shadow: 0 0 15px black;
@@ -230,12 +233,49 @@ main {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+    #nlc-map .nlc-item img {
+      width: 50%;
+      margin: 0 auto; }
     #nlc-map .nlc-item ul {
       list-style-position: inside; }
     @media screen and (max-width: 600px) {
       #nlc-map .nlc-item {
         height: auto; } }
-  #nlc-map .nlc-map-items + h2 {
+
+#mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #mas .fas {
+    font-size: 2em; }
+  #mas a {
+    text-decoration: none; }
+  #mas button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    background-color: #8d2a75;
+    color: #d5e2da;
+    border: none; }
+    #mas button:hover {
+      border: 2px solid rgba(255, 255, 255, 0.5); }
+    @media screen and (max-width: 480px) {
+      #mas button {
+        width: 70%; } }
+  #mas h2 {
     text-align: center;
     width: 75%;
     padding: 10px;
@@ -247,7 +287,7 @@ main {
     background-color: #8d2a75;
     color: #d5e2da; }
     @media screen and (max-width: 480px) {
-      #nlc-map .nlc-map-items + h2 {
+      #mas h2 {
         width: 90%; } }
 
 .sub-nav ul {
