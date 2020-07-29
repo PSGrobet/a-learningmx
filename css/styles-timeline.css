@@ -42,7 +42,7 @@ html, body {
 .timeline-content {
   position: relative;
   width: 40%;
-  padding: 10px 30px;
+  padding: 15px;
   border-radius: 4px;
   background: #f5f5f5;
   -webkit-box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
@@ -57,6 +57,11 @@ html, body {
     right: -15px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #f5f5f5; }
+  @media screen and (max-width: 768px) {
+    .timeline-content h2 {
+      font-size: 1.7em;
+      padding-left: 0;
+      color: #245a57; } }
 
 .timeline-img {
   width: 30px;
@@ -71,13 +76,13 @@ html, body {
 .timeline-card {
   padding: 0 !important; }
   .timeline-card p {
-    padding: 0 20px; }
+    padding: 10px 15px; }
   .timeline-card a {
     margin-left: 20px; }
 
 .timeline-item .timeline-img-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("https://picsum.photos/1000/800/?random") center center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), center center no-repeat;
   background-size: cover; }
   .timeline-item .timeline-img-header#timeline-1980 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/1980.jpg") center no-repeat;
@@ -96,16 +101,27 @@ html, body {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/Suggestopedia.jpg") center no-repeat;
     background-position-y: 40%;
     background-size: cover; }
+  .timeline-item .timeline-img-header#timeline-2001 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/2014-a-learning.jpg") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/2014-a-learning.jpg") center no-repeat;
+    background-position-y: 40%;
+    background-size: cover; }
   .timeline-item .timeline-img-header#timeline-2003 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/A-Discovery-Voyage.jpg") center no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/A-Discovery-Voyage.jpg") center no-repeat;
-    background-position-y: 40%;
+    background-position-y: top;
     background-size: cover; }
   .timeline-item .timeline-img-header#timeline-2013 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/2013-a-learning.jpg") center no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/2013-a-learning.jpg") center no-repeat;
     background-position-y: 40%;
     background-size: cover; }
+  .timeline-item .timeline-img-header#timeline-2015 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/empresas.jpg") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/empresas.jpg") center no-repeat;
+    background-position-y: 20%;
+    background-size: cover;
+    height: 300px; }
   .timeline-item .timeline-img-header#timeline-mar-2020 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/nlc-cover.jpg") center no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/nlc-cover.jpg") center no-repeat;
@@ -113,8 +129,8 @@ html, body {
     background-size: cover;
     height: 300px; }
   .timeline-item .timeline-img-header#timeline-abril-2020 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/Abril-2020-Online-sessions.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/Abril-2020-Online-sessions.jpg") center no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/online-sessions.jpg") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/online-sessions.jpg") center no-repeat;
     background-position-y: top;
     background-size: cover; }
   .timeline-item .timeline-img-header#timeline-jun-2020 {

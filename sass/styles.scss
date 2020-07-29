@@ -33,11 +33,23 @@ body {
     background-color: #eee;
     font-family: sans-serif;
     font-family: "Source Sans Pro";
+    min-height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
     color: $verde-1;
     font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 table {
@@ -230,6 +242,10 @@ main {
         margin: auto;
         flex-grow: 1;  
         align-items: stretch;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
         
 
         @media screen and (max-width: 960px) {
@@ -270,9 +286,7 @@ main {
             margin: 0 auto;
         }
 
-        ul {
-            list-style-position: inside;
-        }
+        
 
         @media screen and (max-width: 600px) {
             height: auto;
@@ -292,17 +306,22 @@ main {
     }
 
     a {
+        display: block;
+        width: 30%;
         text-decoration: none;
+
+        @media screen and (max-width: 600px) {
+            width: 50%;
+            margin: auto;
+            align-self: stretch;
+        }
 
     }
 
     button {
-        display: block;
-        text-align: center;
         width: 100%;
-    
-        padding: 10px;
-        margin: 30px auto;
+        margin-top: 20px;
+        padding: 10px 20px;
         border-radius: 15px;
         letter-spacing: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,1);
@@ -312,13 +331,12 @@ main {
         border: none;
 
         
-        &:hover {
-            //background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255,255,255, 0.5);
+        &:hover, &:active {
+            background-color: $rosa-2;
         }
     
         @media screen and (max-width: 480px) {
-            width: 70%;    
+            width: 100%;    
         }
 
     }
@@ -346,10 +364,18 @@ main {
 // sub-nav
 
 .sub-nav {
+    display: block;
+    margin: auto;
+    width: 100%;
+
     
     ul {
         display: flex;
         justify-content: center;
+
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+        }
     }
 
 
@@ -358,10 +384,7 @@ main {
         list-style: none;
         border-left: 1px solid $azul-claro;
 
-        @media screen and (max-width: 600px) {
-            padding: 5px;
-        }
-
+        
         &:first-child {
             border-left: none;
         }
@@ -373,7 +396,13 @@ main {
 
             &+li {
                 border: none; 
+
+                @media screen and (max-width: 600px) {
+                    border: 1px solid $azul-claro;
+                }
             }
+
+
         }
 
         a {
@@ -382,6 +411,30 @@ main {
             letter-spacing: 1px;
 
         }
+
+        @media screen and (max-width: 700px) {
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 5px;
+            width: 32%;
+            border: 1px solid $azul-claro;
+            border-radius: 5px;
+            margin: 2px;
+
+            &:first-child {
+                border-left: 1px solid $azul-claro;
+            }
+            &+li {
+                border: 1px solid $azul-claro; 
+            }
+            &:active, &:hover {
+                background-color: rgba(83, 189, 197, 0.2)
+            }
+
+        }
+
     }
 }
 
@@ -400,4 +453,43 @@ main {
 .alert {
     color: $rosa-1;
     padding: 0;
+}
+
+footer {
+    background: $verde-1;
+    font-size: 1em;
+    text-align: center;
+    color: #bbb; 
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+a.contacto {
+    display: block;
+    text-align: center;
+    width: 30%;
+
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    background-color: $rosa-1;
+    color: $color-fr-heading;
+    text-decoration: none;
+    border: none;
+
+    
+    &:hover, &:active {
+        //background-color: rgba(255, 255, 255, 0.1);
+        background-color: $rosa-2;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 50%;
+    }
+
+
 }
