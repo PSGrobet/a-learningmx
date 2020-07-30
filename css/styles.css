@@ -34,6 +34,9 @@
   .contacto p {
     font-size: 1.4em;
     text-align: center; }
+  @media screen and (max-width: 660px) {
+    .contacto {
+      width: 100%; } }
   .contacto form {
     margin: 40px auto;
     display: -webkit-box;
@@ -49,6 +52,9 @@
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     font-size: 1.4em; }
+    @media screen and (max-width: 660px) {
+      .contacto form {
+        width: 100%; } }
     .contacto form .form-row {
       padding: 0 20px;
       display: -webkit-box;
@@ -60,7 +66,21 @@
       margin: 5px; }
       .contacto form .form-row input[type="text"],
       .contacto form .form-row input[type="email"] {
+        padding-left: 5px;
         width: 50%; }
+      @media screen and (max-width: 660px) {
+        .contacto form .form-row {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .contacto form .form-row input[type="text"],
+          .contacto form .form-row input[type="email"] {
+            width: 100%; } }
     .contacto form .comment {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -71,15 +91,42 @@
       padding: 0 20px;
       margin: 5px; }
       .contacto form .comment textarea {
+        padding-left: 5px;
         justify-self: flex-end;
         width: 70%;
         height: 100px;
         resize: none; }
+      @media screen and (max-width: 660px) {
+        .contacto form .comment {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .contacto form .comment textarea {
+            width: 100%;
+            height: 200px; } }
     .contacto form fieldset {
       border: 1px solid #53bdc5;
       padding: 0 10px; }
-      .contacto form fieldset input[type="radio"] {
-        margin-left: 30px; }
+      .contacto form fieldset legend + div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        @media screen and (max-width: 660px) {
+          .contacto form fieldset legend + div {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; } }
+      .contacto form fieldset .opcion {
+        margin-left: 30px;
+        padding: 2px 5px;
+        margin: 5px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 * {
   margin: 0;
