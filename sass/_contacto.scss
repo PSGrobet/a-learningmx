@@ -1,0 +1,76 @@
+// color palette
+$color-Edward: #B0B8B3;
+$color-Elm: #1C6970;
+$color-WillowGrove: #646A61;
+$color-Siam: #545C4E;
+$color-fr: #292e25;
+$color-fr-heading: #d5e2da;
+
+$verde-1: #245a57;
+$azul-claro: #53bdc5;
+$verde-2: #398d88;
+$verde-3: #53a7a2;
+$rosa-1: #8d2a75;
+$rosa-2: #a73a8d;
+$cafe: #5a502d;
+
+.contacto {
+    width: 75%;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    form {
+        margin: 40px auto;
+        display: flex;
+        width: 75%;
+        padding: 15px;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        font-size: 1.4em;
+
+        .form-row {
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+
+            input[type="text"],
+            input[type="email"] {
+                width: 50%;
+            }
+
+            
+        }
+
+        .comment {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            margin: 5px;
+
+            textarea {
+                justify-self: flex-end;
+                width: 70%;
+                height: 100px;
+                resize: none;
+            }
+        }
+
+        fieldset {
+            border: 1px solid $azul-claro;
+            padding: 0 10px;
+            
+            input[type="radio"] {
+                margin-left: 30px;
+            }
+        }
+    }
+}

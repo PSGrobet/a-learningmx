@@ -27,6 +27,60 @@
     #placeholder img {
       width: 100%; } }
 
+.contacto {
+  width: 75%; }
+  .contacto h2 {
+    text-align: center; }
+  .contacto p {
+    font-size: 1.4em;
+    text-align: center; }
+  .contacto form {
+    margin: 40px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75%;
+    padding: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 1.4em; }
+    .contacto form .form-row {
+      padding: 0 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 5px; }
+      .contacto form .form-row input[type="text"],
+      .contacto form .form-row input[type="email"] {
+        width: 50%; }
+    .contacto form .comment {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px;
+      margin: 5px; }
+      .contacto form .comment textarea {
+        justify-self: flex-end;
+        width: 70%;
+        height: 100px;
+        resize: none; }
+    .contacto form fieldset {
+      border: 1px solid #53bdc5;
+      padding: 0 10px; }
+      .contacto form fieldset input[type="radio"] {
+        margin-left: 30px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +95,6 @@ body {
   font-family: sans-serif;
   font-family: "Source Sans Pro";
   min-height: 100vh;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,6 +348,8 @@ main {
             box-shadow: 0 0 10px black;
     background-color: #8d2a75;
     color: #d5e2da;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     border: none; }
     #mas button:hover, #mas button:active {
       background-color: #a73a8d; }
@@ -384,12 +439,18 @@ footer {
   background: #245a57;
   font-size: 1em;
   text-align: center;
-  color: #bbb;
+  color: #ccc;
   padding: 10px;
   width: 100%;
   margin-top: 40px;
   -ms-flex-item-align: end;
-      align-self: flex-end; }
+      align-self: flex-end;
+  letter-spacing: 1px; }
+  footer a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  footer a:hover, footer a:active {
+    color: #646A61; }
 
 a.contacto {
   display: block;
@@ -410,4 +471,27 @@ a.contacto {
   @media screen and (max-width: 480px) {
     a.contacto {
       width: 50%; } }
+
+.icons {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 200%;
+  color: #646A61;
+  padding-bottom: 0; }
+  .icons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0; }
+    .icons ul li {
+      list-style: none;
+      margin: 0 10px; }
+      .icons ul li a {
+        color: #ccc; }
+        .icons ul li a:hover, .icons ul li a:active {
+          color: #646A61; }
 /*# sourceMappingURL=styles.css.map */
