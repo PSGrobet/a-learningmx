@@ -193,14 +193,21 @@ html, body {
         }
 
         &#timeline-2001 {
-            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/2014-a-learning.jpg') center no-repeat;
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/AL-2001.jpg') center no-repeat;
             background-position-y: 40%;
             background-size: cover;
             
         }
 
         &#timeline-2003 {
-            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/A-Discovery-Voyage.jpg') center no-repeat;
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/2014-a-learning.jpg') center no-repeat;
+            background-position-y: top;
+            background-size: cover;
+            
+        }
+
+        &#timeline-2006 {
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/diploma-AL.jpg') center no-repeat;
             background-position-y: top;
             background-size: cover;
             
@@ -230,7 +237,7 @@ html, body {
         }
 
         &#timeline-abril-2020 {
-            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/online-sessions.jpg') center no-repeat;
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/timeline/advanced-group.jpg') center no-repeat;
             background-position-y: top;
             background-size: cover;
 
