@@ -6,10 +6,7 @@
     display: none;
 }
 
-img .slide-img {
-    vertical-align: middle;
-    border-radius: 10px;
-}
+
 
 .slideshow-container {
     background-color: #53bdc5;
@@ -19,6 +16,10 @@ img .slide-img {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+    img {
+        border-radius: 10px;
+    }
 }
 
 .text {

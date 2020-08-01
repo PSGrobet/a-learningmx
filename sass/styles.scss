@@ -95,16 +95,13 @@ header {
 
     h1 {
         
-        padding: 20px 30px;
-        font-size: 3em;
         font-family: 'Mulish', sans-serif;
         letter-spacing: 4px;
-        display: inline-block;
 
-        @media screen and (max-width: 600px) {
-            font-size: 1.5em;
-            padding: 10px 10px;
-        }
+        // @media screen and (max-width: 600px) {
+        //     font-size: 1.5em;
+        //     padding: 10px 10px;
+        // }
         
     }
 
@@ -119,6 +116,12 @@ span.title {
     z-index: 1000;
     background-color: $verde-2;
     color: $color-fr;
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+        
+    }    
 }
 
 .navbar-collapse {
@@ -141,6 +144,8 @@ span.title {
 
 .navbar-inverse .navbar-nav > li > a {
     color: $azul-claro;
+
+    
 }
 
 .navbar-inverse .navbar-brand {
@@ -251,6 +256,7 @@ main {
 
         @media screen and (max-width: 960px) {
             flex-direction: column;
+
         }
 
         &>div {
@@ -270,13 +276,14 @@ main {
 
             @media screen and (max-width: 960px) {
                 width: 100%;
+
             }
         }
 
     }
     .nlc-item {
         width: 100%;
-        padding: 0 10px;
+        padding: 30px;
         border-radius: 10px;
         background-color: $azul-claro;
         box-shadow: 0 0 15px rgba(0,0,0,1);  
@@ -287,6 +294,10 @@ main {
             margin: 0 auto;
         }
 
+        @media screen and (max-width: 960px) {
+            max-width: 500px;
+            margin: auto;
+        }
         
 
         @media screen and (max-width: 600px) {

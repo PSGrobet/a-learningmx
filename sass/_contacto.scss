@@ -126,4 +126,24 @@ $cafe: #5a502d;
             // }
         }
     }
+
+    .botones {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+
+        #submit-btn {
+            padding: 5px 15px;
+            color: #eee;
+            background-color: $verde-3;
+            border-radius: 15px;
+            width: 50%;
+
+            &:hover, &:active {
+                background-color: $verde-2;
+            }
+
+        }
+    }
 }

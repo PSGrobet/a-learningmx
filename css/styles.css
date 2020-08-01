@@ -127,6 +127,23 @@
         border-radius: 10px;
         -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  .contacto .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contacto .botones #submit-btn {
+      padding: 5px 15px;
+      color: #eee;
+      background-color: #53a7a2;
+      border-radius: 15px;
+      width: 50%; }
+      .contacto .botones #submit-btn:hover, .contacto .botones #submit-btn:active {
+        background-color: #398d88; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -134,10 +151,6 @@
 
 .mySlides {
   display: none; }
-
-img .slide-img {
-  vertical-align: middle;
-  border-radius: 10px; }
 
 .slideshow-container {
   background-color: #53bdc5;
@@ -148,6 +161,8 @@ img .slide-img {
   margin-bottom: 20px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  .slideshow-container img {
+    border-radius: 10px; }
 
 .text {
   color: #f7f7f7;
@@ -268,15 +283,8 @@ header {
         header #titulo #heading-icon {
           width: 100%; } }
   header h1 {
-    padding: 20px 30px;
-    font-size: 3em;
     font-family: 'Mulish', sans-serif;
-    letter-spacing: 4px;
-    display: inline-block; }
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 1.5em;
-        padding: 10px 10px; } }
+    letter-spacing: 4px; }
 
 span.title {
   white-space: nowrap; }
@@ -286,6 +294,9 @@ span.title {
   z-index: 1000;
   background-color: #398d88;
   color: #292e25; }
+  #navbar-top h1 {
+    font-size: 1em;
+    margin: 0; }
 
 .navbar-collapse {
   padding-left: 10px;
@@ -420,7 +431,7 @@ main {
           width: 100%; } }
   #nlc-map .nlc-item {
     width: 100%;
-    padding: 0 10px;
+    padding: 30px;
     border-radius: 10px;
     background-color: #53bdc5;
     -webkit-box-shadow: 0 0 15px black;
@@ -431,6 +442,10 @@ main {
     #nlc-map .nlc-item img {
       width: 50%;
       margin: 0 auto; }
+    @media screen and (max-width: 960px) {
+      #nlc-map .nlc-item {
+        max-width: 500px;
+        margin: auto; } }
     @media screen and (max-width: 600px) {
       #nlc-map .nlc-item {
         height: auto; } }
