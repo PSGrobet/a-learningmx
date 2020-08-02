@@ -93,6 +93,7 @@ $cafe: #5a502d;
     width: 100%;
     height: 250px;
     margin: 0;
+    display: flex;
 }
 .cont-1 {
     position: absolute;
@@ -103,7 +104,7 @@ $cafe: #5a502d;
     margin: auto;
     background: linear-gradient(45deg, $azul-claro, $verde-2, $cafe, $rosa-1);
     background-size: 400%;
-    animation: gradient 16s linear infinite;
+    animation: gradient 24s linear infinite;
     animation-direction: alternate;
 }
 
@@ -113,16 +114,17 @@ $cafe: #5a502d;
 }
 
 .texto {
-    font-family: 'Mulish';
+    font-family: 'Petit Formal Script', cursive;
     position: relative;
     overflow: hidden;
     width: 100%;
-    top: 25%;
+    vertical-align: middle;
     left: 0;
     margin: 0;
     color: white;
     text-shadow: 0 0 4px rgba(0,0,0,1);
     z-index: 2;
+    align-self: center;
 }
 
 .s-move {
@@ -142,7 +144,7 @@ $cafe: #5a502d;
 }
 
 .s-move {
-    animation: slide-h linear 20s infinite;
+    animation: slide-h linear 30s infinite;
 }
 .s-move:hover {
     animation-play-state: paused;
@@ -150,18 +152,17 @@ $cafe: #5a502d;
 
 @keyframes slide-h {
     0% { right: 0% }
-    12% { right: 0% }
-    15% { right: 100% }
-    27% { right: 100% }
-    30% { right: 200% }
-    42% { right: 200% }
-    45% { right: 300% }
-    57% { right: 300% }
-    60% { right: 400% }
-    72% { right: 400% }
-    75% { right: 500% }
-    87% { right: 500% }
-    90% { right: 500% }
+    14% { right: 0% }
+    16% { right: 100% }
+    30% { right: 100% }
+    32% { right: 200% }
+    46% { right: 200% }
+    48% { right: 300% }
+    62% { right: 300% }
+    64% { right: 400% }
+    78% { right: 400% }
+    80% { right: 500% }
+    99% { right: 500% }
     100% { right: 0%}
 
 

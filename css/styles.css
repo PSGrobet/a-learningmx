@@ -150,7 +150,10 @@
   padding: 0;
   width: 100%;
   height: 250px;
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .cont-1 {
   position: absolute;
@@ -161,8 +164,8 @@
   margin: auto;
   background: linear-gradient(45deg, #53bdc5, #398d88, #5a502d, #8d2a75);
   background-size: 400%;
-  -webkit-animation: gradient 16s linear infinite;
-          animation: gradient 16s linear infinite;
+  -webkit-animation: gradient 24s linear infinite;
+          animation: gradient 24s linear infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate; }
 
@@ -179,16 +182,19 @@
     background-position: 100%; } }
 
 .texto {
-  font-family: 'Mulish';
+  font-family: 'Petit Formal Script', cursive;
   position: relative;
   overflow: hidden;
   width: 100%;
-  top: 25%;
+  vertical-align: middle;
   left: 0;
   margin: 0;
   color: white;
   text-shadow: 0 0 4px black;
-  z-index: 2; }
+  z-index: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 .s-move {
   display: -webkit-box;
@@ -209,8 +215,8 @@
   font-size: 2em; }
 
 .s-move {
-  -webkit-animation: slide-h linear 20s infinite;
-          animation: slide-h linear 20s infinite; }
+  -webkit-animation: slide-h linear 30s infinite;
+          animation: slide-h linear 30s infinite; }
 
 .s-move:hover {
   -webkit-animation-play-state: paused;
@@ -219,29 +225,27 @@
 @-webkit-keyframes slide-h {
   0% {
     right: 0%; }
-  12% {
+  14% {
     right: 0%; }
-  15% {
-    right: 100%; }
-  27% {
+  16% {
     right: 100%; }
   30% {
+    right: 100%; }
+  32% {
     right: 200%; }
-  42% {
+  46% {
     right: 200%; }
-  45% {
+  48% {
     right: 300%; }
-  57% {
+  62% {
     right: 300%; }
-  60% {
+  64% {
     right: 400%; }
-  72% {
+  78% {
     right: 400%; }
-  75% {
+  80% {
     right: 500%; }
-  87% {
-    right: 500%; }
-  90% {
+  99% {
     right: 500%; }
   100% {
     right: 0%; } }
@@ -249,29 +253,27 @@
 @keyframes slide-h {
   0% {
     right: 0%; }
-  12% {
+  14% {
     right: 0%; }
-  15% {
-    right: 100%; }
-  27% {
+  16% {
     right: 100%; }
   30% {
+    right: 100%; }
+  32% {
     right: 200%; }
-  42% {
+  46% {
     right: 200%; }
-  45% {
+  48% {
     right: 300%; }
-  57% {
+  62% {
     right: 300%; }
-  60% {
+  64% {
     right: 400%; }
-  72% {
+  78% {
     right: 400%; }
-  75% {
+  80% {
     right: 500%; }
-  87% {
-    right: 500%; }
-  90% {
+  99% {
     right: 500%; }
   100% {
     right: 0%; } }
