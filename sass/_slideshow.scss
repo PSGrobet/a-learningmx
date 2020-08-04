@@ -86,7 +86,7 @@ $rosa-1: #8d2a75;
 $rosa-2: #a73a8d;
 $cafe: #5a502d;
 
-.container {
+.container-portada {
 
     position: relative;
     padding: 0;
@@ -114,7 +114,9 @@ $cafe: #5a502d;
 }
 
 .texto {
-    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Source Sans Pro', cursive;
+    font-style: italic;
+    letter-spacing: 2px;
     position: relative;
     overflow: hidden;
     width: 100%;

@@ -261,7 +261,7 @@ html, body {
     
 
     h2 {
-        color: $text;
+        color: $text !important;
         position: absolute;
         bottom: 5px;
         left: 20px;

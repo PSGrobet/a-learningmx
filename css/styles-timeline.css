@@ -149,7 +149,7 @@ html, body {
   position: relative;
   margin-bottom: 20px; }
   .timeline-img-header h2 {
-    color: #ffffff;
+    color: #ffffff !important;
     position: absolute;
     bottom: 5px;
     left: 20px; }

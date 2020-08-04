@@ -551,3 +551,50 @@ a.contacto {
         }
     }
 }
+
+#carrusel-top {
+
+    max-width: 100%;
+}
+
+#carrusel-testimonios {
+
+
+    // .carousel {
+    //     width: 100%;
+    // }
+
+
+
+    .item {
+        color: white;
+        width: 100%;
+        font-style: italic;
+        background-color: $verde-3;
+      }
+
+    .slide-text {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 10px 25px 30px 25px;
+        font-size: 14px;
+    }
+
+    .carousel-indicators {
+        bottom: -15px;
+        color: $color-fr;
+        ol {
+            margin-bottom: 0;
+        }
+    }
+
+    .carousel-control {
+        width: 2%;
+
+        @media screen and (max-width: 600px){
+            width: 10%;
+
+        }
+    }
+}
