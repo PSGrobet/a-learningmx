@@ -711,47 +711,62 @@ a.contacto {
           color: #646A61; }
 
 #carrusel-top {
+  height: 200px;
   max-width: 100%; }
+  @media screen and (max-width: 960px) {
+    #carrusel-top {
+      height: 240px; } }
+  @media screen and (max-width: 660px) {
+    #carrusel-top {
+      height: 340px; } }
+  @media screen and (max-width: 480px) {
+    #carrusel-top {
+      height: 480px; } }
+  @media screen and (max-width: 360px) {
+    #carrusel-top {
+      height: 530px; } }
 
-#carrusel-testimonios .item {
-  color: white;
-  width: 100%;
-  font-style: italic;
-  background-color: #53a7a2; }
-
-#carrusel-testimonios .slide-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-  height: 100%;
-  padding: 10px 25px 30px 25px;
-  font-size: 14px; }
-  #carrusel-testimonios .slide-text .img-testimonio {
-    float: left;
-    width: 15%;
-    margin-right: 10px; }
-    @media screen and (max-width: 660px) {
-      #carrusel-testimonios .slide-text .img-testimonio {
-        width: 30%; } }
-    @media screen and (max-width: 480px) {
-      #carrusel-testimonios .slide-text .img-testimonio {
-        width: 50%; } }
-
-#carrusel-testimonios .carousel-indicators {
-  bottom: -15px;
-  color: #292e25; }
-  #carrusel-testimonios .carousel-indicators ol {
-    margin-bottom: 0; }
-
-#carrusel-testimonios .carousel-control {
-  width: 2%; }
-  @media screen and (max-width: 600px) {
-    #carrusel-testimonios .carousel-control {
-      width: 10%; } }
+#carrusel-testimonios {
+  height: 100%; }
+  #carrusel-testimonios .carousel-inner {
+    height: 100%; }
+  #carrusel-testimonios .item {
+    height: 100%;
+    color: white;
+    width: 100%;
+    font-style: italic;
+    background-color: #53a7a2; }
+  #carrusel-testimonios .slide-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    height: 100%;
+    padding: 10px 25px 30px 25px;
+    font-size: 14px; }
+    #carrusel-testimonios .slide-text .img-testimonio {
+      float: left;
+      width: 15%;
+      margin-right: 10px; }
+      @media screen and (max-width: 660px) {
+        #carrusel-testimonios .slide-text .img-testimonio {
+          width: 30%; } }
+      @media screen and (max-width: 480px) {
+        #carrusel-testimonios .slide-text .img-testimonio {
+          width: 50%; } }
+  #carrusel-testimonios .carousel-indicators {
+    bottom: -15px;
+    color: #292e25; }
+    #carrusel-testimonios .carousel-indicators ol {
+      margin-bottom: 0; }
+  #carrusel-testimonios .carousel-control {
+    width: 2%; }
+    @media screen and (max-width: 600px) {
+      #carrusel-testimonios .carousel-control {
+        width: 10%; } }
 
 .collage-crop {
   margin-top: 30px;
@@ -772,7 +787,7 @@ a.contacto {
     font-size: 2em;
     font-weight: bold;
     color: blue;
-    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 2px black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -781,10 +796,12 @@ a.contacto {
             justify-content: center; }
     @media screen and (max-width: 480px) {
       .collage-crop #collage-texto {
-        bottom: 5%; } }
+        bottom: 5%;
+        -webkit-text-stroke: none; } }
     .collage-crop #collage-texto a {
       text-decoration: none;
       color: blue;
+      text-shadow: 0 0 5px white;
       background-color: rgba(255, 255, 255, 0.3);
       width: 50%; }
       .collage-crop #collage-texto a:hover, .collage-crop #collage-texto a:active {
@@ -792,7 +809,8 @@ a.contacto {
       @media screen and (max-width: 660px) {
         .collage-crop #collage-texto a {
           width: 75%;
-          font-size: 1.5em; } }
+          font-size: 1.5em;
+          -webkit-text-stroke: none; } }
       @media screen and (max-width: 480px) {
         .collage-crop #collage-texto a {
           width: 75%;
@@ -814,7 +832,7 @@ a.contacto {
     font-size: 3em;
     font-weight: bold;
     color: blue;
-    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 5px white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -828,7 +846,8 @@ a.contacto {
         font-size: 2.5em; } }
     @media screen and (max-width: 660px) {
       .collage-full #collage-texto {
-        width: 75%; } }
+        width: 75%;
+        -webkit-text-stroke: none; } }
     @media screen and (max-width: 480px) {
       .collage-full #collage-texto {
         width: 75%;

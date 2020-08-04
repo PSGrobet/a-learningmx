@@ -553,20 +553,40 @@ a.contacto {
 }
 
 #carrusel-top {
-
+    height: 200px;
     max-width: 100%;
+
+    @media screen and (max-width: 960px) {
+        height: 240px;
+    }
+
+    @media screen and (max-width: 660px) {
+        height: 340px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 480px;
+    }
+
+    @media screen and (max-width: 360px) {
+        height: 530px;
+    }
 }
 
 #carrusel-testimonios {
+    height: 100%;
 
 
     // .carousel {
     //     width: 100%;
     // }
 
-
+    .carousel-inner {
+        height: 100%;
+    }
 
     .item {
+        height: 100%;
         color: white;
         width: 100%;
         font-style: italic;
@@ -644,18 +664,21 @@ a.contacto {
         font-size: 2em;
         font-weight: bold;
         color: blue;
-        -webkit-text-stroke: 1px white;
+        // -webkit-text-stroke: 1px white;
+        text-shadow: 0 0 2px black;
 
         display: flex;
         justify-content: center;
 
         @media screen and (max-width: 480px) {
             bottom: 5%;
+            -webkit-text-stroke: none;
         }
 
         a {
             text-decoration: none;
             color: blue;
+            text-shadow: 0 0 5px white;
             background-color: rgba(255,255,255,0.3);
             width: 50%;
 
@@ -666,6 +689,7 @@ a.contacto {
             @media screen and (max-width: 660px) {
                 width: 75%;
                 font-size: 1.5em;
+                -webkit-text-stroke: none;
             }
 
             @media screen and (max-width: 480px) {
@@ -704,7 +728,8 @@ a.contacto {
         font-size: 3em;
         font-weight: bold;
         color: blue;
-        -webkit-text-stroke: 1px white;
+        // -webkit-text-stroke: 1px white;
+        text-shadow: 0 0 5px white;
 
         display: flex;
         justify-content: center;
@@ -717,6 +742,7 @@ a.contacto {
         
         @media screen and (max-width: 660px) {
             width: 75%;
+            -webkit-text-stroke: none;
         }
 
         @media screen and (max-width: 480px) {
