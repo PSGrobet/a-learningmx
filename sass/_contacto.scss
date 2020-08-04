@@ -42,6 +42,12 @@ $cafe: #5a502d;
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
         font-size: 1.4em;
 
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border-radius: 5px;
+        }
+
         @media screen and (max-width: 660px) {
             width: 100%;
         }
@@ -121,6 +127,27 @@ $cafe: #5a502d;
 
                 
             }
+
+            .otro {
+                margin: 10px;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 20px;
+                
+                
+                input[type="text"] {
+                width: 50%;
+                padding-left: 5px;
+
+                @media screen and (max-width: 660px) {
+                    flex-grow: 1;
+                    margin-left: 20px;
+                    
+                }
+            }
+            
+            }
+
             
             // input[type="radio"] {
             //     margin-left: 30px;

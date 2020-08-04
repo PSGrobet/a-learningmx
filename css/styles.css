@@ -52,6 +52,10 @@
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     font-size: 1.4em; }
+    .contacto form input[type="text"],
+    .contacto form input[type="email"],
+    .contacto form textarea {
+      border-radius: 5px; }
     @media screen and (max-width: 660px) {
       .contacto form {
         width: 100%; } }
@@ -129,6 +133,24 @@
         border-radius: 10px;
         -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+      .contacto form fieldset .otro {
+        margin: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-left: 20px; }
+        .contacto form fieldset .otro input[type="text"] {
+          width: 50%;
+          padding-left: 5px; }
+          @media screen and (max-width: 660px) {
+            .contacto form fieldset .otro input[type="text"] {
+              -webkit-box-flex: 1;
+                  -ms-flex-positive: 1;
+                      flex-grow: 1;
+              margin-left: 20px; } }
   .contacto .botones {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -704,9 +726,20 @@ a.contacto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
   height: 100%;
   padding: 10px 25px 30px 25px;
   font-size: 14px; }
+  #carrusel-testimonios .slide-text .img-testimonio {
+    float: left;
+    width: 15%;
+    margin-right: 10px; }
+    @media screen and (max-width: 660px) {
+      #carrusel-testimonios .slide-text .img-testimonio {
+        width: 30%; } }
+    @media screen and (max-width: 480px) {
+      #carrusel-testimonios .slide-text .img-testimonio {
+        width: 50%; } }
 
 #carrusel-testimonios .carousel-indicators {
   bottom: -15px;
@@ -719,4 +752,84 @@ a.contacto {
   @media screen and (max-width: 600px) {
     #carrusel-testimonios .carousel-control {
       width: 10%; } }
+
+.collage-crop {
+  margin-top: 30px;
+  height: 220px;
+  overflow: hidden;
+  position: relative; }
+  .collage-crop img {
+    width: 100%; }
+  @media screen and (max-width: 480px) {
+    .collage-crop {
+      height: auto; } }
+  .collage-crop #collage-texto {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    font-size: 2em;
+    font-weight: bold;
+    color: blue;
+    -webkit-text-stroke: 1px white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (max-width: 480px) {
+      .collage-crop #collage-texto {
+        bottom: 5%; } }
+    .collage-crop #collage-texto a {
+      text-decoration: none;
+      color: blue;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: 50%; }
+      .collage-crop #collage-texto a:hover, .collage-crop #collage-texto a:active {
+        background-color: rgba(255, 255, 255, 0.5); }
+      @media screen and (max-width: 660px) {
+        .collage-crop #collage-texto a {
+          width: 75%; } }
+      @media screen and (max-width: 480px) {
+        .collage-crop #collage-texto a {
+          width: 75%;
+          font-size: 1.7em; } }
+
+.collage-full {
+  margin-top: 30px;
+  position: relative; }
+  .collage-full img {
+    width: 100%; }
+  .collage-full #collage-texto {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+    width: 75%;
+    right: 12.5%;
+    font-size: 3em;
+    font-weight: bold;
+    color: blue;
+    -webkit-text-stroke: 1px white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3); }
+    @media screen and (max-width: 960px) {
+      .collage-full #collage-texto {
+        bottom: 10%;
+        font-size: 2.5em; } }
+    @media screen and (max-width: 660px) {
+      .collage-full #collage-texto {
+        width: 75%; } }
+    @media screen and (max-width: 480px) {
+      .collage-full #collage-texto {
+        width: 75%;
+        font-size: 1.7em; } }
 /*# sourceMappingURL=styles.css.map */
