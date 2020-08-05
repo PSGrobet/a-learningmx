@@ -24,6 +24,11 @@ $cafe: #5a502d;
     p {
         font-size: 1.4em;
         text-align: center;
+
+        &#whats {
+            font-size: 1em;
+            text-align: right;
+        }
     }
 
     @media screen and (max-width: 660px) {

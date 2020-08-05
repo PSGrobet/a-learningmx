@@ -34,6 +34,9 @@
   .contacto p {
     font-size: 1.4em;
     text-align: center; }
+    .contacto p#whats {
+      font-size: 1em;
+      text-align: right; }
   @media screen and (max-width: 660px) {
     .contacto {
       width: 100%; } }
@@ -398,11 +401,13 @@ span.title {
   color: #292e25; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #53bdc5; }
+  color: white; }
 
 .navbar-inverse .navbar-brand {
-  color: #53bdc5;
+  color: white;
   letter-spacing: 2px; }
+  .navbar-inverse .navbar-brand:hover {
+    text-shadow: 0 0 2px white; }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -418,7 +423,8 @@ span.title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .nav li:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important; }
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  text-shadow: 0 0 1px white; }
 
 .navbar-inverse .navbar-nav > a:hover {
   background-color: rgba(255, 255, 255, 0.2); }
@@ -433,6 +439,9 @@ span.title {
 
 nav {
   color: #292e25; }
+
+main {
+  min-height: 50vh; }
 
 #content {
   margin: 0;
@@ -585,6 +594,10 @@ nav {
     @media screen and (max-width: 480px) {
       #mas h2 {
         width: 90%; } }
+    @media screen and (max-width: 360px) {
+      #mas h2 {
+        width: 100%;
+        letter-spacing: 2px; } }
 
 .sub-nav {
   display: block;
@@ -663,9 +676,11 @@ footer {
   letter-spacing: 1px; }
   footer a {
     -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    transition: all 0.2s ease;
+    color: #53bdc5; }
   footer a:hover, footer a:active {
-    color: #646A61; }
+    color: white;
+    text-shadow: 0 0 1px white; }
 
 a.contacto {
   display: block;
@@ -724,7 +739,7 @@ a.contacto {
       height: 480px; } }
   @media screen and (max-width: 360px) {
     #carrusel-top {
-      height: 530px; } }
+      height: 500px; } }
 
 #carrusel-testimonios {
   height: 100%; }
@@ -786,7 +801,7 @@ a.contacto {
     bottom: 10%;
     font-size: 2em;
     font-weight: bold;
-    color: blue;
+    color: white;
     text-shadow: 0 0 2px black;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -800,12 +815,12 @@ a.contacto {
         -webkit-text-stroke: none; } }
     .collage-crop #collage-texto a {
       text-decoration: none;
-      color: blue;
-      text-shadow: 0 0 5px white;
-      background-color: rgba(255, 255, 255, 0.3);
+      color: white;
+      text-shadow: 0 0 5px black;
+      background-color: rgba(0, 0, 0, 0.3);
       width: 50%; }
       .collage-crop #collage-texto a:hover, .collage-crop #collage-texto a:active {
-        background-color: rgba(255, 255, 255, 0.5); }
+        background-color: rgba(0, 0, 0, 0.5); }
       @media screen and (max-width: 660px) {
         .collage-crop #collage-texto a {
           width: 75%;
@@ -831,15 +846,15 @@ a.contacto {
     right: 12.5%;
     font-size: 3em;
     font-weight: bold;
-    color: blue;
-    text-shadow: 0 0 5px white;
+    color: white;
+    text-shadow: 0 0 5px black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(0, 0, 0, 0.3); }
     @media screen and (max-width: 960px) {
       .collage-full #collage-texto {
         bottom: 10%;

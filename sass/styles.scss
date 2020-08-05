@@ -143,14 +143,18 @@ span.title {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: $azul-claro;
+    color: white;
 
     
 }
 
 .navbar-inverse .navbar-brand {
-    color: $azul-claro;
+    color: white;
     letter-spacing: 2px;
+
+    &:hover {
+        text-shadow:0 0 2px rgba(255,255,255, 1)
+    }
 }
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -168,6 +172,7 @@ span.title {
 }
 .nav li:hover {
     background-color: rgba(255,255,255, 0.2) !important;
+    text-shadow:0 0 1px rgba(255,255,255, 1)
 }
 
 .navbar-inverse .navbar-nav>a:hover {
@@ -188,22 +193,9 @@ nav {
     color: $color-fr;
 }
 
-// #portada {
-//     width: 100%;
-//     top: 0;
-//     margin: 0 auto 20px auto;
-//     //border-radius: 5px;
-//     //box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    
-
-//     @media screen and (max-width: 600px) {
-//         width: 100%;
-//         padding: 0;
-//         margin: 0;
-//         border-radius: 0;
-//     }
-    
-// }
+main {
+    min-height: 50vh;
+}
 
 
 #content {
@@ -375,6 +367,11 @@ nav {
         @media screen and (max-width: 480px) {
             width: 90%;    
         }
+
+        @media screen and (max-width: 360px) {
+            width: 100%;
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -487,10 +484,12 @@ footer {
     
     a {
         transition: all 0.2s ease;
+        color: $azul-claro;
     }
 
     a:hover, a:active {
-        color: $color-WillowGrove;
+        color: white;
+        text-shadow:0 0 1px rgba(255,255,255, 1)
 
     }
 }
@@ -569,7 +568,7 @@ a.contacto {
     }
 
     @media screen and (max-width: 360px) {
-        height: 530px;
+        height: 500px;
     }
 }
 
@@ -663,7 +662,7 @@ a.contacto {
         bottom: 10%;
         font-size: 2em;
         font-weight: bold;
-        color: blue;
+        color: white;
         // -webkit-text-stroke: 1px white;
         text-shadow: 0 0 2px black;
 
@@ -677,13 +676,13 @@ a.contacto {
 
         a {
             text-decoration: none;
-            color: blue;
-            text-shadow: 0 0 5px white;
-            background-color: rgba(255,255,255,0.3);
+            color: white;
+            text-shadow: 0 0 5px black;
+            background-color: rgba(0,0,0,0.3);
             width: 50%;
 
             &:hover, &:active {
-                background-color: rgba(255,255,255,0.5);
+                background-color: rgba(0,0,0,0.5);
             }
 
             @media screen and (max-width: 660px) {
@@ -727,13 +726,13 @@ a.contacto {
         right: 12.5%;
         font-size: 3em;
         font-weight: bold;
-        color: blue;
+        color: white;
         // -webkit-text-stroke: 1px white;
-        text-shadow: 0 0 5px white;
+        text-shadow: 0 0 5px black;
 
         display: flex;
         justify-content: center;
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(0,0,0,0.3);
 
         @media screen and (max-width: 960px) {
             bottom: 10%;
