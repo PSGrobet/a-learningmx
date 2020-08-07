@@ -102,16 +102,17 @@ $cafe: #5a502d;
     overflow: hidden;
     top: 0;
     margin: auto;
-    background: linear-gradient(45deg, $azul-claro, $verde-2, $cafe, $rosa-1);
-    background-size: 400%;
-    animation: gradient 24s linear infinite;
-    animation-direction: alternate;
+    background-color: $rosa-1; //quitar esta línea si se desea usar la annimación.
+    // background: linear-gradient(45deg, $azul-claro, $verde-2, $cafe, $rosa-1);
+    // background-size: 400%;
+    // animation: gradient 24s linear infinite;
+    // animation-direction: alternate;
 }
 
-@keyframes gradient {
-    0% {background-position: 0%}
-    100% {background-position: 100%}
-}
+// @keyframes gradient {
+//     0% {background-position: 0%}
+//     100% {background-position: 100%}
+// }
 
 .texto {
     font-family: 'Source Sans Pro', cursive;
@@ -135,6 +136,7 @@ $cafe: #5a502d;
     position: relative;
     top: 0;
     right: 0;
+    align-items: middle;
 }
 .slide {
     flex-shrink: 0;
@@ -143,6 +145,14 @@ $cafe: #5a502d;
     text-align: center;
     text-shadow: 0 0 10px rgba(0,0,0,1);
     font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    justify-content: center;
+
+    p {
+        align-self: middle;
+    }
 }
 
 .s-move {
@@ -166,7 +176,4 @@ $cafe: #5a502d;
     80% { right: 500% }
     99% { right: 500% }
     100% { right: 0%}
-
-
-
 }

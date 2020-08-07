@@ -55,6 +55,10 @@ $cafe: #5a502d;
 
         @media screen and (max-width: 660px) {
             width: 100%;
+            
+            .form-label {
+                display: none;
+            }
         }
 
         .form-row {
@@ -79,10 +83,14 @@ $cafe: #5a502d;
                 width: 100%;
                 }
 
+                
+
             }
 
             
         }
+
+        
 
         .comment {
             display: flex;

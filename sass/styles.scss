@@ -68,29 +68,38 @@ table {
 
 
 header {
-    background-color: white;
+    background-color: lightblue;
     color: $verde-2;
 
     #titulo {
-
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        height: 24vw;
+        // display: flex;
+        // align-items: center;
+        // justify-content: flex-start;
         box-sizing: border-box;
-        padding: 15px 30px;
-        height: 18vw;
-        @media screen and (max-width: 600px) {
-            height: 35vw;
-            padding: 10px 0 10px 10px;
-        }
+        // padding: 15px 30px;
+        width: 100%;
+        background: url("../images/head-NeuroCoach.jpg") no-repeat fixed center top;
+        background-size: 100%;
 
-        #heading-icon {
-            width: 50%;
-
-            @media screen and (max-width: 600px) {
-                width: 100%;
-            }
+        @media screen and (max-width: 660px) {
+            background: url("../images/portada.jpg") no-repeat fixed center top;
+            background-size: 100%;
+            height: 38.5vw;
         }
+        
+        // @media screen and (max-width: 600px) {
+        //     height: 35vw;
+        //     padding: 10px 0 10px 10px;
+        // }
+
+        // #heading-icon {
+        //     width: 100%;
+
+        //     @media screen and (max-width: 600px) {
+        //         width: 100%;
+        //     }
+        // }
     }
 
     h1 {
@@ -203,37 +212,116 @@ main {
     color: $color-fr;
     }
 
-    #wrapper {
-        padding-top: 20px;
-        width: 80%;
-        max-width: 1300px;
-        margin: auto;
+#wrapper {
+    padding-top: 20px;
+    width: 100%;
+    // max-width: 1300px;
+    margin: auto;
 
-        @media screen and (max-width: 600px) {
-            width: 100%;
-            padding: 10px;
+    .contenido {
+        margin: 20px;
+
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            padding-left: 20px;
+            margin: auto;
         }
 
         
+    }
 
-        h2 {
-            font-family: 'Mulish', sans-serif;
-            color: $verde-1;
-            letter-spacing: 2px;
-            padding: 10px;
-        }
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        // padding: 10px;
+    }
 
-        p {
-            font-size: 1.2em;
+    
 
-        }
+    h2 {
+        font-family: 'Mulish', sans-serif;
+        
+        letter-spacing: 2px;
+        padding: 10px;
+    }
 
-        ul, ol {
-            padding-left: 10px;
-            font-size: 1.2em;
+    p {
+        font-size: 1.2em;
+
+    }
+
+    ul, ol {
+        padding-left: 10px;
+        font-size: 1.2em;
+    }
+}
+
+.banner {
+    height: 100px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    justify-content: center;
+    text-transform: uppercase;
+    
+    a {
+        transition: transform 0.2s ease;
+    }
+    a:hover, a:active {
+        transform: scale(1.05)
+    }
+
+    h2 {
+        margin: 0;
+
+
+        @media screen and (max-width: 660px) {
+            font-size: 1.7em;
         }
     }
 
+    
+    
+    &#que-es {
+        background-color: white;
+        h2 {
+            color: $rosa-1 !important;
+        }
+    }
+
+    &#programas {
+        background-color: $verde-1;
+        height: 150px;
+        h2 {
+            color: white;
+        }
+        a {
+            letter-spacing: 2px;
+            width: 50%;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.5);
+            color: $rosa-1;
+            font-size: 1.4em;
+            border: 1px solid $rosa-1;
+            border-radius: 5px;
+
+            &:hover, &:active {
+                background-color: rgba(255,255,255,0.8);
+            }
+        }
+
+        @media screen and (max-width: 660px) {
+            font-size: 80%;
+        }
+    }
+
+    
+
+    
+
+}
 
 #nlc-map {
     margin-top: 20px;
@@ -281,10 +369,24 @@ main {
     .nlc-item {
         width: 100%;
         padding: 30px;
-        border-radius: 10px;
-        background-color: $azul-claro;
+        // border-radius: 10px;
         box-shadow: 0 0 15px rgba(0,0,0,1);  
         flex-grow: 1;
+        color: white;
+        text-shadow: 0 0 2px black;
+        h2 {
+            color: white;
+        }
+
+        &#neuro {
+            background-color: $azul-claro;
+        }
+        &#language {
+            background-color: $rosa-1;
+        }
+        &#coaching {
+            background-color: $verde-1;
+        }
 
         img {
             width: 50%;
@@ -332,7 +434,7 @@ main {
         width: 100%;
         margin-top: 20px;
         padding: 10px 20px;
-        border-radius: 15px;
+        border-radius: 5px;
         letter-spacing: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,1);
         background-color: $rosa-1;
@@ -340,10 +442,10 @@ main {
         transition: all 0.5s ease;
 
         border: none;
+        transition: transform 0.2s ease;
 
-        
         &:hover, &:active {
-            background-color: $rosa-2;
+            transform: scale(1.05)
         }
     
         @media screen and (max-width: 480px) {
@@ -358,7 +460,7 @@ main {
     
         padding: 10px;
         margin: 30px auto;
-        border-radius: 15px;
+        border-radius: 5px;
         letter-spacing: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,1);
         background-color: $rosa-1;
@@ -474,13 +576,18 @@ main {
 footer {
     background: $verde-1;
     font-size: 1em;
-    text-align: center;
+    // text-align: center;
     color: #ccc; 
-    padding: 10px;
+    padding: 10px 30px;
     width: 100%;
     margin-top: 40px;
     align-self: flex-end;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     a {
         transition: all 0.2s ease;
@@ -492,6 +599,18 @@ footer {
         text-shadow:0 0 1px rgba(255,255,255, 1)
 
     }
+    .ft-1 {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .ft-2 {
+            text-align: center;
+        }
+    }
+    
 }
 
 a.contacto {
@@ -529,6 +648,7 @@ a.contacto {
     font-size: 200%;
     color: $color-WillowGrove;
     padding-bottom: 0;
+    
 
     ul {
         display: flex;
@@ -594,10 +714,10 @@ a.contacto {
 
     .slide-text {
         display: flex;
-        align-items: center;
+        align-items: middle;
         text-align: left;
         height: 100%;
-        padding: 10px 25px 30px 25px;
+        padding: 20px 30px 30px 30px;
         font-size: 14px;
 
         .img-testimonio {
@@ -635,28 +755,32 @@ a.contacto {
 
 .collage-crop {
 
-    margin-top: 30px;
+    // margin-top: 30px;
     height: 220px;
     overflow: hidden;
     position: relative;
+    background-color: $rosa-1;
 
     img {
         width: 100%;
+        opacity: 0.5;
+
     }
 
     @media screen and (max-width: 480px) {
         height: auto;
     }
 
-    #collage-texto {
+    #collage-texto-inicio {
         // text-decoration: none;
         // font-size: 25px;
         // font-weight: bold;
         // color: blue;
         // -webkit-text-stroke: 1px white;
         // background-color: rgba(255,255,255,0.5);
-        width: 100%;
+        background-color: $rosa-1;
         margin: auto;
+        width: 100%;
         text-align: center;
         position: absolute;
         bottom: 10%;
@@ -675,25 +799,34 @@ a.contacto {
         }
 
         a {
+            letter-spacing: 2px;
             text-decoration: none;
             color: white;
             text-shadow: 0 0 5px black;
-            background-color: rgba(0,0,0,0.3);
-            width: 50%;
+            background-color: $rosa-1;
+            // width: 80%;
+            padding: 0 20px;
+            border-radius: 5px;
+            z-index: 1;
+            transition: transform 0.2s ease;
 
             &:hover, &:active {
-                background-color: rgba(0,0,0,0.5);
+                transform: scale(1.05);
             }
 
-            @media screen and (max-width: 660px) {
-                width: 75%;
-                font-size: 1.5em;
-                -webkit-text-stroke: none;
-            }
+            // @media screen and (max-width: 660px) {
+            //     width: 75%;
+            //     font-size: 1.2em;
+            //     -webkit-text-stroke: none;
+            // }
 
             @media screen and (max-width: 480px) {
-                width: 75%;
+                // width: 75%;
                 font-size: 1em;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 0.7em;
             }
 
         }
