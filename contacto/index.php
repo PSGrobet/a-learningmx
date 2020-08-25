@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/a684445abf.js" crossorigin="anonymous"></script>
     
+    <meta property="og:description" content="Contacto" />
+    <meta property="og:image" content="http://a-learningmx.com/images/portada-fb.jpg" />
 </head>
 <body>
     <header>
@@ -33,12 +35,12 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../">Inicio</a></li>
                     <li><a href="../nlc.html">Qué es NLC</a></li>
-                    <li><a href="../mi-historia/index.html">Mi Historia</a></li>
+                    <li><a href="../mi-historia/">Mi Historia</a></li>
                     <li><a href="../servicios.html">Servicios</a></li>
                     <li><a href="../recursos.html">Recursos</a></li>
-                    <li><a href="../Blog/index.html">Blog</a></li>                    
+                    <li><a href="../blog/">Blog</a></li>                    
                     <li><a href="#">Contacto</a></li>
                 </ul>
                 

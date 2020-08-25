@@ -962,4 +962,34 @@ a.contacto {
       .collage-full #collage-texto {
         width: 75%;
         font-size: 1.7em; } }
+
+.go-fish-ejemplos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (max-width: 667px) {
+    .go-fish-ejemplos {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.recurso {
+  text-align: center;
+  width: 45%;
+  margin-top: 30px; }
+  @media screen and (max-width: 667px) {
+    .recurso {
+      width: 100%; } }
+
+.GF-img {
+  max-width: 360px;
+  width: 100%;
+  margin: auto; }
+  .GF-img img {
+    width: 100%; }
 /*# sourceMappingURL=styles.css.map */
