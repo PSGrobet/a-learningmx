@@ -970,7 +970,8 @@ a.contacto {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 30px; }
   @media screen and (max-width: 667px) {
     .go-fish-ejemplos {
       -webkit-box-orient: vertical;
@@ -981,7 +982,9 @@ a.contacto {
 .recurso {
   text-align: center;
   width: 45%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
   @media screen and (max-width: 667px) {
     .recurso {
       width: 100%; } }
