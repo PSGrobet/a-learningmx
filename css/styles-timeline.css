@@ -1,43 +1,56 @@
 html, body {
   overflow-x: hidden;
-  padding: 0; }
+  padding: 0;
+}
 
 .timeline {
-  position: relative; }
-  .timeline::before {
-    content: '';
-    background: #c5cae9;
-    width: 5px;
-    height: 95%;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  background: #c5cae9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 
 .timeline-item {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 70px; }
-  .timeline-item:nth-child(even) .timeline-content {
-    float: right;
-    padding: 40px 30px 30px 30px; }
-    .timeline-item:nth-child(even) .timeline-content .date {
-      right: auto;
-      left: 0; }
-    .timeline-item:nth-child(even) .timeline-content::after {
-      content: '';
-      position: absolute;
-      border-style: solid;
-      width: 0;
-      height: 0;
-      top: 30px;
-      left: -15px;
-      border-width: 10px 15px 10px 0;
-      border-color: transparent #f5f5f5 transparent transparent; }
-  .timeline-item::after {
-    content: '';
-    display: block;
-    clear: both; }
+  margin-bottom: 70px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 30px 30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 .timeline-content {
   position: relative;
@@ -46,22 +59,28 @@ html, body {
   border-radius: 4px;
   background: #f5f5f5;
   -webkit-box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); }
-  .timeline-content::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 30px;
-    right: -15px;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #f5f5f5; }
-  @media screen and (max-width: 768px) {
-    .timeline-content h2 {
-      font-size: 1.7em;
-      padding-left: 0;
-      color: #245a57; } }
+          box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-content h2 {
+    font-size: 1.7em;
+    padding-left: 0;
+    color: #245a57;
+  }
+}
 
 .timeline-img {
   width: 30px;
@@ -71,94 +90,127 @@ html, body {
   position: absolute;
   left: 50%;
   margin-top: 25px;
-  margin-left: -15px; }
+  margin-left: -15px;
+}
 
 .timeline-card {
-  padding: 0 !important; }
-  .timeline-card p {
-    padding: 10px 15px; }
-  .timeline-card a {
-    margin-left: 20px; }
+  padding: 0 !important;
+}
+
+.timeline-card p {
+  padding: 10px 15px;
+}
+
+.timeline-card a {
+  margin-left: 20px;
+}
 
 .timeline-item .timeline-img-header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), center center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), center center no-repeat;
-  background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-1980 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/1980.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/1980.jpg") center no-repeat;
-    background-position-y: 10%;
-    background-size: cover;
-    height: 300px; }
-  .timeline-item .timeline-img-header#timeline-1992 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/1992.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/1992.jpg") center no-repeat;
-    background-position-y: 40%;
-    background-size: cover;
-    height: 300px; }
-  .timeline-item .timeline-img-header#timeline-1999 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/Suggestopedia.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/Suggestopedia.jpg") center no-repeat;
-    background-position-y: 40%;
-    background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-2001 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/AL-2001.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/AL-2001.jpg") center no-repeat;
-    background-position-y: 40%;
-    background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-2003 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/2014-a-learning.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/2014-a-learning.jpg") center no-repeat;
-    background-position-y: top;
-    background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-2006 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/diploma-AL.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/diploma-AL.jpg") center no-repeat;
-    background-position-y: top;
-    background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-2013 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/2013-a-learning.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/2013-a-learning.jpg") center no-repeat;
-    background-position-y: 40%;
-    background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-2015 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/empresas.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/empresas.jpg") center no-repeat;
-    background-position-y: 20%;
-    background-size: cover;
-    height: 300px; }
-  .timeline-item .timeline-img-header#timeline-mar-2020 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/nlc-cover.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/nlc-cover.jpg") center no-repeat;
-    background-position-y: 30%;
-    background-size: cover;
-    height: 300px; }
-  .timeline-item .timeline-img-header#timeline-abril-2020 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/advanced-group.jpg") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/advanced-group.jpg") center no-repeat;
-    background-position-y: top;
-    background-size: cover; }
-  .timeline-item .timeline-img-header#timeline-jun-2020 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/jun-2020-certificado.png") center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/jun-2020-certificado.png") center no-repeat;
-    background-position-y: 40%;
-    background-size: cover; }
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-1980 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/1980.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/1980.jpg") center no-repeat;
+  background-position-y: 10%;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeline-item .timeline-img-header#timeline-1992 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/1992.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/1992.jpg") center no-repeat;
+  background-position-y: 40%;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeline-item .timeline-img-header#timeline-1999 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/Suggestopedia.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/Suggestopedia.jpg") center no-repeat;
+  background-position-y: 40%;
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-2001 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/AL-2001.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/AL-2001.jpg") center no-repeat;
+  background-position-y: 40%;
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-2003 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/2014-a-learning.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/2014-a-learning.jpg") center no-repeat;
+  background-position-y: top;
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-2006 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/diploma-AL.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/diploma-AL.jpg") center no-repeat;
+  background-position-y: top;
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-2013 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/2013-a-learning.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/2013-a-learning.jpg") center no-repeat;
+  background-position-y: 40%;
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-2015 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/empresas.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/empresas.jpg") center no-repeat;
+  background-position-y: 20%;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeline-item .timeline-img-header#timeline-mar-2020 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/nlc-cover.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/nlc-cover.jpg") center no-repeat;
+  background-position-y: 30%;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeline-item .timeline-img-header#timeline-abril-2020 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/advanced-group.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/advanced-group.jpg") center no-repeat;
+  background-position-y: top;
+  background-size: cover;
+}
+
+.timeline-item .timeline-img-header#timeline-jun-2020 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/jun-2020-certificado.png") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/jun-2020-certificado.png") center no-repeat;
+  background-position-y: 40%;
+  background-size: cover;
+}
 
 .timeline-img-header {
   height: 200px;
   position: relative;
-  margin-bottom: 20px; }
-  .timeline-img-header h2 {
-    color: #ffffff !important;
-    position: absolute;
-    bottom: 5px;
-    left: 20px; }
+  margin-bottom: 20px;
+}
+
+.timeline-img-header h2 {
+  color: #ffffff !important;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
 
 blockquote {
   margin-top: 30px;
   color: #757575;
   border-left-color: #245a57;
-  padding: 0 20px; }
+  padding: 0 20px;
+}
 
 .date {
   background: #8d2a75;
@@ -167,19 +219,24 @@ blockquote {
   padding: 10px;
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+}
 
 @media screen and (max-width: 768px) {
   .timeline::before {
-    left: 50px; }
+    left: 50px;
+  }
   .timeline .timeline-img {
-    left: 50px; }
+    left: 50px;
+  }
   .timeline .timeline-content {
     max-width: 100%;
     width: auto;
-    margin-left: 70px; }
+    margin-left: 70px;
+  }
   .timeline .timeline-item:nth-child(even) .timeline-content {
-    float: none; }
+    float: none;
+  }
   .timeline .timeline-item:nth-child(odd) .timeline-content::after {
     content: "";
     position: absolute;
@@ -189,5 +246,7 @@ blockquote {
     top: 30px;
     left: -15px;
     border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent; } }
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
 /*# sourceMappingURL=styles-timeline.css.map */
