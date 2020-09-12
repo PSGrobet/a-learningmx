@@ -1340,7 +1340,7 @@ a.contacto:hover, a.contacto:active {
   }
 }
 
-.go-fish-ejemplos {
+.juego-ejemplos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1352,10 +1352,11 @@ a.contacto:hover, a.contacto:active {
   margin-top: 30px;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  width: auto;
 }
 
 @media screen and (max-width: 667px) {
-  .go-fish-ejemplos {
+  .juego-ejemplos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1393,13 +1394,13 @@ a.contacto:hover, a.contacto:active {
   }
 }
 
-.GF-img {
+.game-example-img {
   max-width: 360px;
   width: 100%;
   margin: auto;
 }
 
-.GF-img img {
+.game-example-img img {
   width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
