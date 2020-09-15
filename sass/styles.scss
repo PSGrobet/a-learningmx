@@ -144,6 +144,10 @@ span.title {
     height: auto;
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: inherit;
+}
+
 .container-fluid {
     background-color: $verde-2;
     color: $color-fr;

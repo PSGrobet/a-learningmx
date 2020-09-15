@@ -39,7 +39,13 @@
                     <li><a href="../nlc.html">Qué es NLC</a></li>
                     <li><a href="../mi-historia/">Mi Historia</a></li>
                     <li><a href="../servicios.html">Servicios</a></li>
-                    <li><a href="../recursos.html">Recursos</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../recursos/productos.html">Tienda</a></li>
+                            <li><a href="../recursos/juegos.html">Juegos en línea</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../blog/">Blog</a></li>                    
                     <li><a href="#">Contacto</a></li>
                 </ul>
