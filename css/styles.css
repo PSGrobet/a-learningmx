@@ -1407,4 +1407,11 @@ a.contacto:hover, a.contacto:active {
 .game-example-img img {
   width: 100%;
 }
+
+iframe {
+  display: block;
+  margin: 10px auto 30px auto;
+  width: 70vw;
+  height: 40vw;
+}
 /*# sourceMappingURL=styles.css.map */
