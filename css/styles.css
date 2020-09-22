@@ -1398,20 +1398,71 @@ a.contacto:hover, a.contacto:active {
   }
 }
 
-.game-example-img {
-  max-width: 360px;
-  width: 100%;
-  margin: auto;
+.thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.game-example-img img {
+.thumbnail {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px auto 30px auto;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  cursor: pointer;
+  width: 18em;
+}
+
+.thumbnail:active {
+  border: none;
+  -webkit-box-shadow: 0 0 10px black inset;
+          box-shadow: 0 0 10px black inset;
+}
+
+.thumbnail img {
   width: 100%;
+}
+
+.thumbnail span {
+  text-align: center;
+}
+
+.thumbnail a {
+  text-decoration: none;
+}
+
+.thumbnail a:visited {
+  color: inherit;
+}
+
+.iframe-container {
+  padding-top: 30px;
 }
 
 iframe {
   display: block;
-  margin: 10px auto 30px auto;
-  width: 70vw;
-  height: 40vw;
+  width: 60vw;
+  height: 35vw;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 900px) {
+  iframe {
+    width: 90vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 90vw;
+    height: 90vw;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
