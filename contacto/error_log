@@ -1,7 +1,0 @@
-[04-Aug-2020 22:38:39 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailFrom' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 6
-[04-Aug-2020 22:44:16 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailFrom' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 6
-[04-Aug-2020 22:50:43 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailFrom' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 6
-[04-Aug-2020 22:52:15 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailTo' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 15
-[04-Aug-2020 22:57:38 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailTo' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 15
-[04-Aug-2020 23:01:59 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailTo' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 15
-[04-Aug-2020 23:05:36 America/Mexico_City] PHP Parse error:  syntax error, unexpected '$mailTo' (T_VARIABLE) in /home4/alearnin/public_html/contacto-prueba/contacto.php on line 15

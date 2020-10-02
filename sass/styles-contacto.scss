@@ -1,0 +1,28 @@
+#contact-form {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+
+  
+}
+
+#otro-medio {
+  display: flex;
+  justify-content: center;
+
+  div {
+    margin: 0 20px;
+  }
+}
+
+button {
+  width: 200px;
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
