@@ -192,6 +192,14 @@ html, body {
   background-size: cover;
 }
 
+.timeline-item .timeline-img-header#timeline-sep-2020 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../images/timeline/diploma-ACE.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/diploma-ACE.jpg") center no-repeat;
+  background-position-y: 0%;
+  background-size: cover;
+  height: 300px;
+}
+
 .timeline-img-header {
   height: 200px;
   position: relative;
