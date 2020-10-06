@@ -284,7 +284,7 @@ main {
 
     
     
-    &#que-es {
+    &.que-es {
         background-color: white;
         h2 {
             color: $rosa-1 !important;
@@ -323,13 +323,14 @@ main {
 
 }
 
-#nlc-map {
+.map {
     margin-top: 20px;
 
-    .nlc-map-items {
+    .map-items {
         display: flex;
         justify-content: space-evenly;
         width: 90%;
+        flex-wrap: wrap;
         margin: auto;
         flex-grow: 1;  
         align-items: stretch;
@@ -344,7 +345,9 @@ main {
 
         }
 
-        &>div {
+        &>div{
+            margin-top: 20px;
+
             width: 30%;
             display: flex;
             flex-direction: column;
@@ -357,7 +360,7 @@ main {
             margin-bottom: 20px;
             flex-grow: 0;
             
-        }
+            }
 
             @media screen and (max-width: 960px) {
                 width: 100%;
@@ -366,7 +369,7 @@ main {
         }
 
     }
-    .nlc-item {
+    .map-item {
         width: 100%;
         padding: 30px;
         // border-radius: 10px;
@@ -374,6 +377,7 @@ main {
         flex-grow: 1;
         color: white;
         text-shadow: 0 0 2px black;
+        background-color: inherit;
         h2 {
             color: white;
         }
@@ -402,11 +406,20 @@ main {
         @media screen and (max-width: 600px) {
             height: auto;
         }
+
+        &.aa {
+            color: inherit;
+            text-shadow: none;
+            text-align: center;
+            h2 {
+                color: inherit;
+            }
+        }
         
     }
 }
 
-#mas {
+.mas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,8 +447,9 @@ main {
         width: 100%;
         margin-top: 20px;
         padding: 10px 20px;
-        border-radius: 5px;
         letter-spacing: 5px;
+        font-size: 120%;
+        font-weight: bold;
         box-shadow: 0 0 10px rgba(0,0,0,1);
         background-color: $rosa-1;
         color: $color-fr-heading;
@@ -460,11 +474,9 @@ main {
     
         padding: 10px;
         margin: 30px auto;
-        border-radius: 5px;
         letter-spacing: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,1);
-        background-color: $rosa-1;
-        color: $color-fr-heading;
+        color: $rosa-1;
     
         @media screen and (max-width: 480px) {
             width: 90%;    
@@ -925,6 +937,33 @@ a.contacto {
     margin: auto;
 
     img {
+        width: 100%;
+    }
+}
+
+
+.video {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:600px) {
+        video {
+            width: 100%;
+        }
+    }
+}
+
+.imagen {
+    width: 50%;
+    display: flex;
+    margin: 30px auto;
+
+    img {
+        width:100%;
+    }
+
+    @media screen and (max-width: 768px){
         width: 100%;
     }
 }

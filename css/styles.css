@@ -672,11 +672,11 @@ main {
   }
 }
 
-.banner#que-es {
+.banner.que-es {
   background-color: white;
 }
 
-.banner#que-es h2 {
+.banner.que-es h2 {
   color: #8d2a75 !important;
 }
 
@@ -710,11 +710,11 @@ main {
   }
 }
 
-#nlc-map {
+.map {
   margin-top: 20px;
 }
 
-#nlc-map .nlc-map-items {
+.map .map-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,6 +722,8 @@ main {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -732,13 +734,13 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  #nlc-map .nlc-map-items {
+  .map .map-items {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 960px) {
-  #nlc-map .nlc-map-items {
+  .map .map-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -746,7 +748,8 @@ main {
   }
 }
 
-#nlc-map .nlc-map-items > div {
+.map .map-items > div {
+  margin-top: 20px;
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,7 +763,7 @@ main {
           align-items: stretch;
 }
 
-#nlc-map .nlc-map-items > div img {
+.map .map-items > div img {
   display: block;
   margin: 20px auto 0 auto;
   -ms-flex-item-align: end;
@@ -772,12 +775,12 @@ main {
 }
 
 @media screen and (max-width: 960px) {
-  #nlc-map .nlc-map-items > div {
+  .map .map-items > div {
     width: 100%;
   }
 }
 
-#nlc-map .nlc-item {
+.map .map-item {
   width: 100%;
   padding: 30px;
   -webkit-box-shadow: 0 0 15px black;
@@ -787,43 +790,54 @@ main {
           flex-grow: 1;
   color: white;
   text-shadow: 0 0 2px black;
+  background-color: inherit;
 }
 
-#nlc-map .nlc-item h2 {
+.map .map-item h2 {
   color: white;
 }
 
-#nlc-map .nlc-item#neuro {
+.map .map-item#neuro {
   background-color: #53bdc5;
 }
 
-#nlc-map .nlc-item#language {
+.map .map-item#language {
   background-color: #8d2a75;
 }
 
-#nlc-map .nlc-item#coaching {
+.map .map-item#coaching {
   background-color: #245a57;
 }
 
-#nlc-map .nlc-item img {
+.map .map-item img {
   width: 50%;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 960px) {
-  #nlc-map .nlc-item {
+  .map .map-item {
     max-width: 500px;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #nlc-map .nlc-item {
+  .map .map-item {
     height: auto;
   }
 }
 
-#mas {
+.map .map-item.aa {
+  color: inherit;
+  text-shadow: none;
+  text-align: center;
+}
+
+.map .map-item.aa h2 {
+  color: inherit;
+}
+
+.mas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,18 +850,18 @@ main {
           align-items: center;
 }
 
-#mas .fas {
+.mas .fas {
   font-size: 2em;
 }
 
-#mas a {
+.mas a {
   display: block;
   width: 30%;
   text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
-  #mas a {
+  .mas a {
     width: 50%;
     margin: auto;
     -ms-flex-item-align: stretch;
@@ -856,12 +870,13 @@ main {
   }
 }
 
-#mas button {
+.mas button {
   width: 100%;
   margin-top: 20px;
   padding: 10px 20px;
-  border-radius: 5px;
   letter-spacing: 5px;
+  font-size: 120%;
+  font-weight: bold;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
   background-color: #8d2a75;
@@ -875,38 +890,36 @@ main {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-#mas button:hover, #mas button:active {
+.mas button:hover, .mas button:active {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
 @media screen and (max-width: 480px) {
-  #mas button {
+  .mas button {
     width: 100%;
   }
 }
 
-#mas h2 {
+.mas h2 {
   text-align: center;
   width: 75%;
   padding: 10px;
   margin: 30px auto;
-  border-radius: 5px;
   letter-spacing: 5px;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
-  background-color: #8d2a75;
-  color: #d5e2da;
+  color: #8d2a75;
 }
 
 @media screen and (max-width: 480px) {
-  #mas h2 {
+  .mas h2 {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 360px) {
-  #mas h2 {
+  .mas h2 {
     width: 100%;
     letter-spacing: 2px;
   }
@@ -1402,5 +1415,39 @@ a.contacto:hover, a.contacto:active {
 
 .game-example-img img {
   width: 100%;
+}
+
+.video {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .video video {
+    width: 100%;
+  }
+}
+
+.imagen {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto;
+}
+
+.imagen img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
