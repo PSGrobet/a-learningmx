@@ -631,7 +631,6 @@ main {
 }
 
 .banner {
-  height: 100px;
   margin-top: 20px;
   width: 100%;
   text-align: center;
@@ -683,26 +682,31 @@ main {
 
 .banner#programas {
   background-color: #245a57;
-  height: 150px;
+  height: auto;
 }
 
 .banner#programas h2 {
   color: white;
 }
 
-.banner#programas a {
+.banner#programas h3 {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 2px;
-  width: 50%;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #8d2a75;
-  font-size: 1.4em;
-  border: 1px solid #8d2a75;
-  border-radius: 5px;
+}
+
+.banner#programas a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .banner#programas a:hover, .banner#programas a:active {
-  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 440px) {
+  .banner#programas a {
+    font-size: 80%;
+  }
 }
 
 @media screen and (max-width: 660px) {

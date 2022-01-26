@@ -257,7 +257,7 @@ main {
 }
 
 .banner {
-    height: 100px;
+    // height: 200px;
     margin-top: 20px;
     width: 100%;
     text-align: center;
@@ -294,22 +294,30 @@ main {
 
     &#programas {
         background-color: $verde-1;
-        height: 150px;
+        height: auto;
         h2 {
             color: white;
         }
-        a {
+        h3 {
+            margin-top: 10px;
+            color: rgba(255,255,255,0.8);
             letter-spacing: 2px;
-            width: 50%;
-            margin: 0 auto;
-            background-color: rgba(255,255,255,0.5);
-            color: $rosa-1;
-            font-size: 1.4em;
-            border: 1px solid $rosa-1;
-            border-radius: 5px;
+        }
+        a {
+        //     letter-spacing: 2px;
+        //     width: 50%;
+        //     margin: 0 auto;
+        //     background-color: rgba(255,255,255,0.5);
+             color: rgba(255,255,255,0.5);
+        //     font-size: 1.4em;
+        //     border: 1px solid $rosa-1;
+        //     border-radius: 5px;
 
             &:hover, &:active {
-                background-color: rgba(255,255,255,0.8);
+                color: rgba(255,255,255,0.8);
+            }
+            @media screen and (max-width: 440px){
+                font-size: 80%;
             }
         }
 
@@ -317,8 +325,6 @@ main {
             font-size: 80%;
         }
     }
-
-    
 
     
 
